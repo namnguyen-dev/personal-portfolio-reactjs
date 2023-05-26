@@ -1,9 +1,26 @@
-function App() {
+import React from 'react';
+import {
+  Navbar,
+  Hero,
+  About,
+  Skills,
+  Portfolio,
+  Contact,
+  Footer,
+} from './components';
+
+const App = () => {
   return (
-    <>
-      <h1>Hi</h1>
-    </>
+    <div id="home">
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Portfolio />
+      <Contact />
+      <Footer />
+    </div>
   );
-}
+};
 
 export default App;
