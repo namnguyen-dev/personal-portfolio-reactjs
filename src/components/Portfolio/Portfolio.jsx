@@ -1,5 +1,5 @@
 import React from 'react';
-import Project from '../Project/Project'; 
+import Project from '../Project/Project';
 import './Portfolio.css';
 import { projects } from '../../data';
 
@@ -8,7 +8,12 @@ const Portfolio = () => {
     <section className="section portfolio" id="portfolio">
       <div className="section-center">
         <div className="section-title portfolio-title">
-          <h2>Portfolio</h2>
+          <h2
+            className="animate"
+            data-animate="tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both"
+          >
+            Portfolio
+          </h2>
           <div className="underline"></div>
         </div>
 
@@ -23,7 +28,7 @@ const Portfolio = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          more project
+          more projects
         </a>
       </div>
     </section>
